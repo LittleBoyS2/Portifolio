@@ -1,0 +1,377 @@
+/* ESIILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'fira code';
+}
+
+body{
+    background-color: rgb(252, 252, 252);
+    height: 100vh;
+}
+
+.interface{
+    margin: 0 auto;
+}
+
+section > header{
+    background-color: rgb(9, 9, 143);
+    color: aliceblue
+}
+
+.flex{
+    display: flex;
+}
+
+button:hover, form .btn-enviar input:hover{
+    transform: scale(1.05);
+    display: inline-block;
+    transition: .3s;
+}
+
+
+/* ESTILO CABEÇALHO */
+
+header{
+    padding: 15px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+header .interface .imagem:hover{
+    transform: scale(1.10);
+    display: inline-block;
+    transition: .3s;
+}
+
+
+.informacao a{
+    color: rgba(255, 255, 255, 0.342);
+    text-decoration: none;
+}
+
+.informacao a:hover{
+    color: #fff;
+    transform: scale(1.30);
+    display: inline-block;
+    transition: .3s;
+}
+
+.informacao nav ul{
+    list-style-type: none;
+}
+
+.informacao nav ul li{
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+header .btn-download button{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(252, 24, 81);
+    cursor: pointer;
+    box-shadow: 5px 3px;
+}
+
+header .btn-download :hover{
+    color:#fff;
+    transform: scale(1.05);
+    display: inline-block;
+    transition: .3s;
+    box-shadow: 5px 3px 0px rgb(0 ,0, 0);
+}
+
+
+
+
+/* ESTILO BANNER */
+
+section.inicio{
+    padding: 4%;
+    background-color:  rgb(9, 9, 143);
+    color: #fff;
+}
+
+section.inicio .flex{
+    justify-content: center;
+    gap: 200px;
+}
+
+.inicio .titulo-banner{
+    color:rgb(255, 250, 250);
+    padding: 5px 5px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 30px;
+    background-color: rgb(57, 57, 65);
+    box-shadow: 5px 4px rgb(0 ,0, 0);
+    justify-items: center;
+    height: 150px;
+}
+
+.titulo-banner h1{
+    color: rgb(252, 24, 81);
+    margin-top: 30px;
+}
+
+section.inicio .topo-site .titulo-banner{
+    width: 500px;
+}
+
+section.inicio .topo-site .txt-inf {    
+    line-height: 35px;
+    width: 500px;
+}
+
+section.inicio .btn-contato{
+    padding: 10px 180px;
+    
+}
+
+section.inicio .btn-contato a{ 
+    border: none;
+}
+
+section.inicio .btn-contato button{
+    margin: 10px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(252, 24, 81);
+    cursor: pointer;
+    box-shadow: 5px 3px;
+}
+
+section.inicio .btn-contato button:hover{
+    color:#fff;
+    transform: scale(1.05);
+    display: inline-block;
+    transition: .3s;
+    box-shadow: 5px 3px 0px rgb(0 ,0, 0);
+}
+
+section.inicio .foto img{
+    border-radius: 50%;
+    border: solid rgb(252, 24, 81);
+    box-shadow: 0px 0px 15px rgb(252, 24, 81);
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0
+    }
+    100%{
+        top: 50px
+    }
+}
+
+/* ESTILO HABILIDADES */
+
+section.habilidades {
+    padding: 4%;
+    background-color:  rgb(0, 0, 0);
+    color: #000000;
+    border: solid;
+}
+
+section.habilidades .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+section.habilidades .t-habilidades{
+    color:rgb(255, 250, 250);
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+}
+
+section.habilidades .especialidades{
+    color: #fff;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 250px;
+}
+
+section.habilidades .especialidades li{
+    margin: 0px;
+    padding-top: 100px;
+}
+
+section.habilidades .especialidades h2{
+    text-align: center;
+}
+
+/* ESTILO PROJETOS */
+
+section.projetos {
+    padding: 4%;
+    background-color:  rgb(9, 9, 143);
+    color: #000000;
+    border: solid;
+}
+
+section.projetos .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+section.projetos .t-projetos{
+    color:rgb(255, 250, 250);
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+}
+
+section.projetos .meusP h2{
+    margin: 35px;
+    color:rgb(255, 250, 250);
+    font-size: 28px;
+    font-weight: 200;
+    font-family: 'fira code';
+    text-align: center;
+    padding-top: 100px;
+}
+
+section.projetos .meusP video{
+    margin: 35px;
+    padding-top: 10px;
+}
+
+section.projetos .meusP video{
+    text-align: center;
+}
+
+/*SOBRE MIM */
+
+section.sobre {
+    padding: 4%;
+    background-color:  rgb(0, 0, 0);
+    color: #000000;
+    border: solid;
+}
+
+section.sobre .flex{
+    align-items: center;
+    justify-content: center;
+}
+
+section.sobre .t-sobre{
+    color:rgb(255, 250, 250);
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sobre .titulo-banner{
+    color:rgb(255, 250, 250);
+    padding: 3px 3px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 30px;
+    background-color: rgb(57, 57, 65);
+    box-shadow: 5px 4px rgb(0 ,0, 0);
+    justify-items: center;
+}
+
+.sobre .titulo-banner h1{
+    color: rgb(243, 234, 236);
+    margin-top: 50px;
+}
+
+section.sobre .topo-site .titulo-banner{
+    width: 300px;
+}
+
+section.sobre .foto{
+    text-align: center;
+}
+
+section.sobre .flex .foto img{
+    border-radius: 80%;
+    border: solid rgb(50, 1, 3);
+    box-shadow: 0px 0px 15px rgba(1, 0, 0, 0.963);
+}
+
+section.sobre .txt-inf p{
+    box-sizing: border-box; 
+    font-family: 'fira code';
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.sobre .txt-inf .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(105, 105, 214);
+    font-size:  22px;  
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2;
+    box-shadow: 3px 3px 0px rgb(0 ,0, 0);
+}
+
+/* ESTILO CONTATOS */
+
+section.contatos{
+    padding: 80px 4%;
+    background-color:  rgb(9, 9, 143);
+    color: #f8f8f8;
+    align-items: center;
+    text-align: center;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #0000008d;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(252, 24, 81);
+    cursor: pointer;
+    box-shadow: 5px 3px 0px rgb(0 ,0, 0);
+}
